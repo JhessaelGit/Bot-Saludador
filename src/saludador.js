@@ -15,11 +15,21 @@ function inicioDeSaludo(){
 }
 
 function saludoGenero(genero){
-
+  let saludo='';
+  if(genero==='Hombre'){
+    saludo='Señor'
+  }
+  else if(genero==='Mujer'){
+    saludo='Señora'
+  }
+  else{
+    saludo='Sr./Sra.'
+  }
+  return saludo;
 }
 
 function saludar(Nombre,Genero) {
-  return inicioDeSaludo() + " " + Nombre;
+  return inicioDeSaludo() +" " + saludoGenero(Genero) + " " + Nombre;
 }
 
 export default saludar;
