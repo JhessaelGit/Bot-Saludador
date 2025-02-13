@@ -14,7 +14,11 @@ function inicioDeSaludo(){
   return inicioSaludo;
 }
 
-function saludar(Nombre) {
+function saludoGenero(genero){
+
+}
+
+function saludar(Nombre,Genero) {
   return inicioDeSaludo() + " " + Nombre;
 }
 
