@@ -5,6 +5,8 @@ const Nombre=document.querySelector("#Nombre-Usuario");
 const Edad=document.querySelector("#Edad-Usuario");
 const Genero=document.querySelector("#Genero-Usuario");
 
+
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const nombreUsuario=Nombre.value;
