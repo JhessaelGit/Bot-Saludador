@@ -13,5 +13,5 @@ form.addEventListener("submit", (event) => {
   const edadUsuario=Edad.value;
   const generoUsuario=Genero.value;
 
-  div.innerHTML = "<p>" + saludar(nombreUsuario,generoUsuario) + "</p>";
+  div.innerHTML = "<p>" + saludar(nombreUsuario,generoUsuario,edadUsuario) + "</p>";
 });
