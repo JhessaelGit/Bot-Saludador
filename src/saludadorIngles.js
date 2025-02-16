@@ -3,11 +3,11 @@ function inicioDeSaludo() {
   const hora = ahora.getHours();
   let inicioSaludo = "";
   if (hora >= 0 && hora < 12) {
-    inicioSaludo = "Buenos dias";
+    inicioSaludo = "Good Morning";
   } else if (hora >= 12 && hora < 19) {
-    inicioSaludo = "Buenas tardes";
+    inicioSaludo = "Good Afternoon";
   } else {
-    inicioSaludo = "Buenas noches";
+    inicioSaludo = "Good Evening";
   }
   return inicioSaludo;
 }
@@ -15,11 +15,11 @@ function inicioDeSaludo() {
 function saludarJoven(genero){
   let saludo = "";
   if (genero === "M") {
-    saludo = "Joven";
+    saludo = "Young";
   } else if (genero === "F") {
-    saludo = "Señorita";
+    saludo = "Miss";
   } else {
-    saludo = "Sr./Sra.";
+    saludo = "Mr./Mrs.";
   }
   return saludo;
 }
@@ -27,11 +27,11 @@ function saludarJoven(genero){
 function saludarAdulto(genero) {
   let saludo = "";
   if (genero === "M") {
-    saludo = "Señor";
+    saludo = "Mister";
   } else if (genero === "F") {
-    saludo = "Señora";
+    saludo = "Misses";
   } else {
-    saludo = "Sr./Sra.";
+    saludo = "Mr./Mrs.";
   }
   return saludo;
 }
@@ -47,8 +47,8 @@ function SaludarPorEdad(edad,genero){
 }
 
 
-function saludar(Nombre, Genero,Edad) {
+function saludarIngles(Nombre, Genero,Edad) {
   return inicioDeSaludo() + " " + SaludarPorEdad(Edad,Genero) + " " + Nombre;
 }
 
-export default saludar;
+export default saludarIngles;
