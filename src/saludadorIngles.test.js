@@ -9,7 +9,10 @@ describe("Saludador Ingles", ()=>{
     it("Deberia saludar en la Noche en forma joven",()=>{
         expect(saludarIngles("Jhessael","M",17,22)).toEqual("Good Evening Young Jhessael");
     })
-    it("deberia saludar en para la tarde a un senior", ()=>{
+    it("deberia saludar en para la tarde en forma de senior", ()=>{
         expect(saludarIngles("Jhessael","M",22,13)).toEqual("Good Afternoon Mister Jhessael");
+    });
+    it("deberia saludar en para la noche en forma de senior", ()=>{
+        expect(saludarIngles("Jhessael","M",22,22)).toEqual("Good Evening Mister Jhessael");
     });
 })
