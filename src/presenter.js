@@ -8,16 +8,22 @@ const Genero=document.querySelector("#Genero-Usuario");
 const Idioma=document.querySelector("#Idioma-Usuario");
 
 
+
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+
+  const ahora = new Date();
+  const hora = ahora.getHours();
+
   const nombreUsuario=Nombre.value;
   const edadUsuario=Edad.value;
   const generoUsuario=Genero.value;
   const idiomaUsuario=Idioma.value;
   if (idiomaUsuario=="espaniol"){
-    div.innerHTML = "<p>" + saludarEspaniol(nombreUsuario,generoUsuario,edadUsuario,idiomaUsuario) + "</p>";
+    div.innerHTML = "<p>" + saludarEspaniol(nombreUsuario,generoUsuario,edadUsuario,hora) + "</p>";
   }
   else if (idiomaUsuario=="ingles"){
-    div.innerHTML = "<p>" + saludarIngles(nombreUsuario,generoUsuario,edadUsuario,idiomaUsuario) + "</p>";
+    div.innerHTML = "<p>" + saludarIngles(nombreUsuario,generoUsuario,edadUsuario) + "</p>";
   }
 });

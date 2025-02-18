@@ -1,7 +1,7 @@
-function inicioDeSaludo() {
-  const ahora = new Date();
-  const hora = ahora.getHours();
+function inicioDeSaludo(hora) {
+
   let inicioSaludo = "";
+  console.log("Hora: " + hora);
   if (hora >= 0 && hora < 12) {
     inicioSaludo = "Buenos dias";
   } else if (hora >= 12 && hora < 19) {
@@ -47,8 +47,8 @@ function SaludarPorEdad(edad,genero){
 }
 
 
-function saludarEspaniol(Nombre, Genero,Edad) {
-  return inicioDeSaludo() + " " + SaludarPorEdad(Edad,Genero) + " " + Nombre;
+function saludarEspaniol(Nombre, Genero,Edad,hora) {
+  return inicioDeSaludo(hora) + " " + SaludarPorEdad(Edad,Genero) + " " + Nombre;
 }
 
 export default saludarEspaniol;
