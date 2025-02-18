@@ -1,6 +1,4 @@
-function inicioDeSaludo() {
-  const ahora = new Date();
-  const hora = ahora.getHours();
+function inicioDeSaludo(hora) {
   let inicioSaludo = "";
   if (hora >= 0 && hora < 12) {
     inicioSaludo = "Good Morning";
@@ -47,8 +45,8 @@ function SaludarPorEdad(edad,genero){
 }
 
 
-function saludarIngles(Nombre, Genero,Edad) {
-  return inicioDeSaludo() + " " + SaludarPorEdad(Edad,Genero) + " " + Nombre;
+function saludarIngles(Nombre, Genero,Edad, hora) {
+  return inicioDeSaludo(hora) + " " + SaludarPorEdad(Edad,Genero) + " " + Nombre;
 }
 
 export default saludarIngles;

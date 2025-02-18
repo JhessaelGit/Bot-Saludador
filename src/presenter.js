@@ -24,6 +24,6 @@ form.addEventListener("submit", (event) => {
     div.innerHTML = "<p>" + saludarEspaniol(nombreUsuario,generoUsuario,edadUsuario,hora) + "</p>";
   }
   else if (idiomaUsuario=="ingles"){
-    div.innerHTML = "<p>" + saludarIngles(nombreUsuario,generoUsuario,edadUsuario) + "</p>";
+    div.innerHTML = "<p>" + saludarIngles(nombreUsuario,generoUsuario,edadUsuario,hora) + "</p>";
   }
 });
